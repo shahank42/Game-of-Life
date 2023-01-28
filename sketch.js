@@ -161,10 +161,10 @@ let rows, cols;
  * p5.js setup function
  */
 function setup() {
-	createCanvas(canvas_width, canvas_height);
+	createCanvas(windowWidth, windowHeight);
 
-	rows = canvas_height / cell_size;
-	cols = canvas_width  / cell_size;
+	rows = Math.floor(windowHeight / cell_size);
+	cols = Math.floor(windowWidth  / cell_size);
 
 	grid = new Grid(rows, cols);
 }
